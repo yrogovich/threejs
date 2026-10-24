@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Particle Cosmos — three.js</title>
+    <meta name="description" content="90,000 GPU particles morphing between cosmic shapes. Built with three.js and custom GLSL shaders." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+
+    <header class="brand">
+      <h1>Particle<span>Cosmos</span></h1>
+      <p>90k GPU particles · custom GLSL · three.js</p>
+    </header>
+
+    <section class="caption">
+      <span id="shape-index">01 / 05</span>
+      <h2 id="shape-name">Spiral Galaxy</h2>
+      <div class="timer"><div id="progress"></div></div>
+      <nav id="dots" aria-label="Shapes"></nav>
+    </section>
+
+    <aside class="hint">
+      <span>drag</span> orbit · <span>move</span> disturb · <span>click / space</span> morph
+    </aside>
+
+    <a class="source" href="https://github.com/yrogovich/threejs" target="_blank" rel="noopener">source ↗</a>
+
+    <div class="loader">loading the cosmos…</div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
